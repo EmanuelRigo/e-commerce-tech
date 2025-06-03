@@ -32,3 +32,6 @@ const schema = new Schema(
   },
   { timestamps: true }
 );
+
+const CartModel = model(colllection, schema);
+export default CartModel;

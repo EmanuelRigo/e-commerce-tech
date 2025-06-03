@@ -1,5 +1,5 @@
 import { Router } from "express";
-import patientsApiRouter from "./patients.router";
+import cartsApiRouter from "./carts.router";
 
 const apiRouter = Router();
 
@@ -7,6 +7,6 @@ apiRouter.get("/ping", (_req, res) => {
   res.send("pong 🏓");
 });
 
-apiRouter.use("/carts", CartsApiRouter); // Esto monta /api/patient
+apiRouter.use("/", cartsApiRouter); // Esto monta /api/patient
 
 export default apiRouter;
